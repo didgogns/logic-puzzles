@@ -1,4 +1,6 @@
 // https://www.youtube.com/watch?v=6w2c-myAxm4
+// By Alex Bellos
+// Expected result: 8 solutions. Every solution is obtainable by rotating or flipping the solution provided in video.
 #include <bits/stdc++.h>
 using namespace std;
 
