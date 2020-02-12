@@ -11,7 +11,8 @@ Therefore, it is unlikely to find every combination and check them one by one. I
 # Existing approach
 
 https://www.jaapsch.net/puzzles/polysolver.htm by Jaap Scherphuis
-http://www.mathpuzzle.com/polyom.htm
+
+And many other polynomino puzzle solver
 
 # Plan
 
