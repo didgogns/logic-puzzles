@@ -63,6 +63,6 @@ public abstract class BaseChecker {
 		return true;
 	}
 
-	abstract boolean check();
+	abstract boolean check(Board board);
 
 }
