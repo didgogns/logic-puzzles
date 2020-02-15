@@ -1,8 +1,6 @@
 package checker;
 
-import puzzle.Board;
-
-public class Checker1 extends NumberChecker {
+public class Checker1 extends BFSNumChecker {
 
 	@Override
 	public int getMinForZero() {
@@ -10,15 +8,8 @@ public class Checker1 extends NumberChecker {
 	}
 
 	@Override
-	boolean checkArea(int a) {
+	public boolean checkArea(int a) {
 		if (a < 3) return false;
-		return true;
-	}
-
-	@Override
-	boolean check(Board board) {
-		if (!super.bfsCheck(board)) return false;
-		if (!super.numberCheck(board)) return false;
 		return true;
 	}
 	
