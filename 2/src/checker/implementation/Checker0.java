@@ -1,5 +1,6 @@
-package checker;
+package checker.implementation;
 
+import checker.definition.BaseChecker;
 import puzzle.Board;
 
 public class Checker0 implements BaseChecker {

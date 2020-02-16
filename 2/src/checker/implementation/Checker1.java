@@ -1,4 +1,6 @@
-package checker;
+package checker.implementation;
+
+import checker.definition.BFSNumChecker;
 
 public class Checker1 extends BFSNumChecker {
 

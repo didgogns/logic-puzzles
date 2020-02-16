@@ -1,4 +1,4 @@
-package checker;
+package checker.definition;
 
 import puzzle.Board;
 import puzzle.Info;

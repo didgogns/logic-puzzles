@@ -4,6 +4,8 @@ public class Info {
 	public static final int HEIGHT = 7;
 	public static final int WIDTH = 12;
 	
+	public static final int FOUR_PIECE = 8;
+	
 	public static final int ARROW_NUM = 15;
 	public static final int[][] ARROWS = {
 			{13, 14},
