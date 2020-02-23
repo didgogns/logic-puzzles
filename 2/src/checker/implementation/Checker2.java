@@ -3,10 +3,12 @@ package checker.implementation;
 import java.util.List;
 
 import Util.BFSUtil;
+import Util.CheckUtil;
 import checker.definition.BFSChecker;
+import checker.definition.BaseChecker;
 import puzzle.Board;
 
-public class Checker2 implements BFSChecker {
+public class Checker2 implements BFSChecker, BaseChecker {
 
 	@Override
 	public boolean checkArea(int a) {
@@ -21,5 +23,10 @@ public class Checker2 implements BFSChecker {
 			if (!checkArea(area)) return false;
 		}
 		return true;
+	}
+
+	@Override
+	public boolean check(Board board) {
+		return CheckUtil.check(board) && bfsCheck(board);
 	}
 }
