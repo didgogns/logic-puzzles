@@ -85,6 +85,6 @@ public class Piece {
 
 		oTetromino = Arrays.asList(new Piece(Arrays.asList(pt[0][0], pt[0][1], pt[1][0], pt[1][1]), 8));
 		
-		minos = Arrays.asList(domino, iTrimino, vTrimino, lTetromino, nTetromino, iTetromino, tTetromino, oTetromino);
+		minos = Arrays.asList(domino, vTrimino, iTrimino, lTetromino, nTetromino, tTetromino, iTetromino, oTetromino);
 	}
 }
