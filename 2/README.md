@@ -17,4 +17,4 @@ And many other polynomino puzzle solver
 # Plan
 
 Use File system to save and load progressions and distribute work (possibly?)
-Use BFS for first 7 pieces
+Use DFS for first 7 pieces (Saving work while BFS takes way more memory)
