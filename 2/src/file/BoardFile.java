@@ -17,20 +17,17 @@ public class BoardFile {
 			for (int cell : row) sb.append(cell);
 		}
 		
-		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(board.count + "/" + sb));
+		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("data/" + board.count + "/" + sb + ".txt"));
 		bufferedWriter.write(sb.toString());
 		bufferedWriter.close();
 	}
 	
-	public static Board read(File file, int count) throws FileNotFoundException {
+	public static Board read(String text, int count) throws FileNotFoundException {
 		Board board = new Board();
 		board.count = count;
-		Scanner scanner = new Scanner(file);
-		String text = scanner.next();
-		scanner.close();
 		boolean[] appeared = new boolean[count];
 		for (int i = 0; i < Info.HEIGHT * Info.WIDTH; i++) {
-			int cur = Integer.valueOf(text.charAt(i));
+			int cur = Integer.valueOf(text.charAt(i) - '0');
 			board.board[i / Info.WIDTH][i % Info.WIDTH] = cur;
 			if (cur != 0) appeared[cur - 1] = true;
 		}
