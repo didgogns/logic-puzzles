@@ -1,6 +1,7 @@
 package checker.implementation;
 
 import checker.definition.BFSNumChecker;
+import puzzle.Board;
 
 public class Checker3 extends BFSNumChecker {
 
@@ -14,5 +15,11 @@ public class Checker3 extends BFSNumChecker {
 	public int getMinForZero() {
 		return 4;
 	}
-
+	
+	@Override
+	public boolean check(Board board) {
+		if (!super.check(board)) return false;
+		if (board.skipped) return false;
+		return true;
+	}
 }

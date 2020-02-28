@@ -22,7 +22,7 @@ import puzzle.Board;
 public class Runner {
 	public static List<BaseChecker> checkers = Arrays.asList(new Checker1(), new Checker2(), new Checker3(), new Checker45678(), new Checker45678(), new Checker45678(), new Checker45678(), new CheckerFinal());
 	
-	public void run(int k) {
+	public void runBFS(int k) {
 		System.out.println("run: " + k);
 		BaseChecker checker = checkers.get(k);
 		try {
@@ -37,13 +37,14 @@ public class Runner {
 						int cnt = 0;
 						for (Piece piece : Piece.minos.get(k)) {
 							List<Board> nextBoards = PieceFiller.fillPiece(oldBoard, piece);
+							System.out.println("found " + nextBoards.size() + " boards");
 							for (Board board : nextBoards) {
 								if (!checker.check(board)) continue;
 								BoardFile.write(board);
 								cnt++;
 							}
+							System.out.println("wrote " + cnt + " files so far");
 						}
-						System.out.println("file end, write " + cnt + " files");
 						Files.delete(filePath);
 					}
 				} catch (Exception e) {

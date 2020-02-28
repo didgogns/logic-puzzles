@@ -16,7 +16,7 @@ public class Main {
 		}
 		for (int i = 0; i <= 8; i++) {
 			Runner runner = new Runner();
-			runner.run(i);
+			runner.runBFS(i);
 		}
 	}
 }
