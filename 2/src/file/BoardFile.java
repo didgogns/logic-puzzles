@@ -26,7 +26,7 @@ public class BoardFile {
 	public static void write(Board board) throws IOException {
 		String str = toString(board);
 		
-		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("data/" + board.count + "/" + str + ".txt"));
+		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(str + ".txt"));
 		bufferedWriter.write(str);
 		bufferedWriter.close();
 	}
