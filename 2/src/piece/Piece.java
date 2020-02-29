@@ -61,30 +61,30 @@ public class Piece {
 		iTrimino = Arrays.asList(new Piece(Arrays.asList(pt[0][0], pt[0][1], pt[0][2]), 3),
 				new Piece(Arrays.asList(pt[0][0], pt[1][0], pt[2][0]), 3));
 
-		lTetromino = Arrays.asList(new Piece(Arrays.asList(pt[0][0], pt[0][1], pt[0][2], pt[1][0]), 4),
-				new Piece(Arrays.asList(pt[0][0], pt[0][1], pt[0][2], pt[1][2]), 4),
-				new Piece(Arrays.asList(pt[0][0], pt[0][1], pt[1][0], pt[2][0]), 4),
-				new Piece(Arrays.asList(pt[0][0], pt[0][1], pt[1][1], pt[2][1]), 4),
-				new Piece(Arrays.asList(pt[0][0], pt[1][0], pt[1][1], pt[1][2]), 4),
-				new Piece(Arrays.asList(pt[0][0], pt[1][0], pt[2][0], pt[2][1]), 4),
-				new Piece(Arrays.asList(pt[0][1], pt[1][1], pt[2][0], pt[2][1]), 4),
-				new Piece(Arrays.asList(pt[0][2], pt[1][0], pt[1][1], pt[1][2]), 4));
+		lTetromino = Arrays.asList(new Piece(Arrays.asList(pt[0][0], pt[0][1], pt[0][2], pt[1][0]), 8),
+				new Piece(Arrays.asList(pt[0][0], pt[0][1], pt[0][2], pt[1][2]), 8),
+				new Piece(Arrays.asList(pt[0][0], pt[0][1], pt[1][0], pt[2][0]), 8),
+				new Piece(Arrays.asList(pt[0][0], pt[0][1], pt[1][1], pt[2][1]), 8),
+				new Piece(Arrays.asList(pt[0][0], pt[1][0], pt[1][1], pt[1][2]), 8),
+				new Piece(Arrays.asList(pt[0][0], pt[1][0], pt[2][0], pt[2][1]), 8),
+				new Piece(Arrays.asList(pt[0][1], pt[1][1], pt[2][0], pt[2][1]), 8),
+				new Piece(Arrays.asList(pt[0][2], pt[1][0], pt[1][1], pt[1][2]), 8));
 
-		nTetromino = Arrays.asList(new Piece(Arrays.asList(pt[0][0], pt[0][1], pt[1][1], pt[1][2]), 5),
-				new Piece(Arrays.asList(pt[0][0], pt[1][0], pt[1][1], pt[2][1]), 5),
-				new Piece(Arrays.asList(pt[0][1], pt[0][2], pt[1][0], pt[1][1]), 5),
-				new Piece(Arrays.asList(pt[0][1], pt[1][0], pt[1][1], pt[2][0]), 5));
+		nTetromino = Arrays.asList(new Piece(Arrays.asList(pt[0][0], pt[0][1], pt[1][1], pt[1][2]), 7),
+				new Piece(Arrays.asList(pt[0][0], pt[1][0], pt[1][1], pt[2][1]), 7),
+				new Piece(Arrays.asList(pt[0][1], pt[0][2], pt[1][0], pt[1][1]), 7),
+				new Piece(Arrays.asList(pt[0][1], pt[1][0], pt[1][1], pt[2][0]), 7));
 
 		tTetromino = Arrays.asList(new Piece(Arrays.asList(pt[0][0], pt[0][1], pt[0][2], pt[1][1]), 6),
 				new Piece(Arrays.asList(pt[0][0], pt[1][0], pt[1][1], pt[2][0]), 6),
 				new Piece(Arrays.asList(pt[0][1], pt[1][0], pt[1][1], pt[1][2]), 6),
 				new Piece(Arrays.asList(pt[0][1], pt[1][0], pt[1][1], pt[2][1]), 6));
 
-		iTetromino = Arrays.asList(new Piece(Arrays.asList(pt[0][0], pt[0][1], pt[0][2], pt[0][3]), 7),
-				new Piece(Arrays.asList(pt[0][0], pt[1][0], pt[2][0], pt[3][0]), 7));
+		iTetromino = Arrays.asList(new Piece(Arrays.asList(pt[0][0], pt[0][1], pt[0][2], pt[0][3]), 5),
+				new Piece(Arrays.asList(pt[0][0], pt[1][0], pt[2][0], pt[3][0]), 5));
 
-		oTetromino = Arrays.asList(new Piece(Arrays.asList(pt[0][0], pt[0][1], pt[1][0], pt[1][1]), 8));
+		oTetromino = Arrays.asList(new Piece(Arrays.asList(pt[0][0], pt[0][1], pt[1][0], pt[1][1]), 4));
 		
-		minos = Arrays.asList(domino, vTrimino, iTrimino, lTetromino, nTetromino, tTetromino, iTetromino, oTetromino);
+		minos = Arrays.asList(domino, vTrimino, iTrimino, oTetromino, iTetromino, tTetromino, nTetromino, lTetromino);
 	}
 }
