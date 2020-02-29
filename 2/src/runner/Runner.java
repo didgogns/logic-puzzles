@@ -38,6 +38,13 @@ public class Runner {
 				}
 				BaseChecker checker = checkers.get(k);
 				if (k < 4) System.out.println("Board k: " + k);
+				if (!oldBoard.skipped) {
+					Board board = PieceFiller.fillPiece(oldBoard, null, 0, 0);
+					if (checker.check(board)) {
+						stk.add(board);
+						cnt++;
+					}
+				}
 				for (Piece piece : Piece.minos.get(k)) {
 					List<Board> nextBoards = PieceFiller.fillPiece(oldBoard, piece);
 					for (Board board : nextBoards) {

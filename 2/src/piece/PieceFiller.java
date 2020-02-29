@@ -39,10 +39,6 @@ public class PieceFiller {
 				if (board != null) boardList.add(board);
 			}
 		}
-		
-		if (!oldBoard.skipped) {
-			boardList.add(fillPiece(oldBoard, null, 0, 0));
-		}
 		return boardList;
 	}
 }
