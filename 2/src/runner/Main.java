@@ -14,9 +14,7 @@ public class Main {
 				Files.createDirectories(dataPath);
 			}
 		}
-		for (int i = 0; i <= 8; i++) {
-			Runner runner = new Runner();
-			runner.runBFS(i);
-		}
+		Runner runner = new Runner();
+		runner.runDFS();
 	}
 }
