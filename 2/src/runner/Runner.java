@@ -34,9 +34,6 @@ public class Runner {
 				}
 				BaseChecker checker = checkers.get(k);
 				if (k < 4) System.out.println("Board k: " + k);
-				if (!checkers.get(k - 1).check(oldBoard)) {
-					System.out.println("not valid board!");
-				}
 				if (!oldBoard.skipped) {
 					Board board = PieceFiller.fillPiece(oldBoard, null, 0, 0);
 					if (checker.check(board)) {
