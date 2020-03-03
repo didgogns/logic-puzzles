@@ -1,6 +1,5 @@
 package checker.definition;
 
-import file.BoardFile;
 import puzzle.Board;
 import puzzle.Info;
 import util.IndexConvertUtil;
@@ -23,15 +22,6 @@ public abstract class BFSRemainingNumberChecker implements BaseChecker, NumberCh
 	
 	@Override
 	public boolean check(Board board) {
-		if (numberCheck(board) && RemainingCheckUtil.remainingCheck(board)) {
-			for (int h = 0; h < Info.HEIGHT; h++) {
-				for (int w = 0; w < Info.WIDTH; w++) {
-					System.out.print(board.board[h][w]);
-				}
-				System.out.println();
-			}
-			System.out.println();
-		}
 		return numberCheck(board) && RemainingCheckUtil.remainingCheck(board) && bfsCheck(board);
 	}
 	

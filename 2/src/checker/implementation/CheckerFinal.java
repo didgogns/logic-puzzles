@@ -1,10 +1,8 @@
 package checker.implementation;
 
-import java.io.FileNotFoundException;
 import java.util.List;
 
 import checker.definition.BFSRemainingNumberChecker;
-import file.BoardFile;
 import puzzle.Board;
 import util.BFSUtil;
 

@@ -2,12 +2,9 @@ package file;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Scanner;
 import java.util.Stack;
 
 import puzzle.Board;
@@ -31,7 +28,7 @@ public class BoardFile {
 		bufferedWriter.close();
 	}
 	
-	public static Board read(String text) throws FileNotFoundException {
+	public static Board read(String text) {
 		Board board = new Board();
 		board.count = Integer.valueOf(text.charAt(Info.HEIGHT * Info.WIDTH) - '0');
 		boolean[] appeared = new boolean[board.count];
