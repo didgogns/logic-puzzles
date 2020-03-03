@@ -1,4 +1,4 @@
-package Util;
+package util;
 
 import puzzle.Board;
 import puzzle.Info;

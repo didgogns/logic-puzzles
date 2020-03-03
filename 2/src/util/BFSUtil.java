@@ -1,10 +1,13 @@
-package Util;
+package util;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
 
+import checker.implementation.CheckerFinal;
+import file.BoardFile;
 import puzzle.Board;
 import puzzle.Info;
 
@@ -54,6 +57,22 @@ public class BFSUtil {
 			}
 		}
 		return result;
+	}
+	
+	public static void main(String[] args) throws FileNotFoundException {
+		// 0000000000000107000008000177000888050070000000056003020000056603220000056003000000008
+		String str = 
+				"000000000000" + 
+				"010700000800" +
+				"017700088805" + 
+				"007000000005" + 
+				"600302000005" + 
+				"660322000005" + 
+				"6003000000008";
+		Board board = BoardFile.read(str);
+		System.out.println(findEmptyArea(board));
+		CheckerFinal cf = new CheckerFinal();
+		System.out.println(cf.check(board));
 	}
 
 }

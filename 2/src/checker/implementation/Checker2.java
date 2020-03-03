@@ -2,11 +2,11 @@ package checker.implementation;
 
 import java.util.List;
 
-import Util.BFSUtil;
-import Util.CheckUtil;
 import checker.definition.BFSChecker;
 import checker.definition.BaseChecker;
 import puzzle.Board;
+import util.BFSUtil;
+import util.CheckUtil;
 
 public class Checker2 implements BFSChecker, BaseChecker {
 

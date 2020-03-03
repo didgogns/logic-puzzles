@@ -2,9 +2,9 @@ package checker.definition;
 
 import java.util.List;
 
-import Util.BFSUtil;
 import puzzle.Board;
 import puzzle.Info;
+import util.BFSUtil;
 
 public abstract class BFSNumChecker implements BFSChecker, NumberChecker, BaseChecker {
 
