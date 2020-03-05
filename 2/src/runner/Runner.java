@@ -55,6 +55,7 @@ public class Runner {
 					saveTime = System.currentTimeMillis();
 				}
 			}
+			BoardFile.writeFile(stk);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
