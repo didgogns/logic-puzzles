@@ -15,6 +15,7 @@ public class PieceFiller {
 			}
 		}
 		board.count = oldBoard.count + 1;
+		board.skipped = oldBoard.skipped;
 		if (piece == null) {
 			if (oldBoard.skipped) {
 				return null;
